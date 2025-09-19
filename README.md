@@ -1,7 +1,7 @@
 
 <table>
   <tr>
-    <th rowspan="5">참여학생</th>
+    <th rowspan="6">참여학생</th>
     <th>학과</th>
     <th>학번</th>
     <th>이름</th>
@@ -25,5 +25,10 @@
     <td>임베디드시스템전공</td>
     <td>2022146013</td>
     <td>박윤미</td>
+  </tr>
+  <tr>
+    <td>소프트웨어전공</td>
+    <td>---</td>
+    <td>박래찬</td>
   </tr>
 </table>
