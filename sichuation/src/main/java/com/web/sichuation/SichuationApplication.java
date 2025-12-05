@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SichuationApplication {
 
 
-
+//test
 
 	public static void main(String[] args) {
 		SpringApplication.run(SichuationApplication.class, args);
