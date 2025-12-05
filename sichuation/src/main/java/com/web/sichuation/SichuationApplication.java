@@ -8,6 +8,8 @@ public class SichuationApplication {
 
     //yy
 
+//test
+
 	public static void main(String[] args) {
 		SpringApplication.run(SichuationApplication.class, args);
 	}
