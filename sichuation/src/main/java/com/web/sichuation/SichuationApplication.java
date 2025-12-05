@@ -10,6 +10,7 @@ public class SichuationApplication {
 
 //test
 
+    //hello   -------
 	public static void main(String[] args) {
 		SpringApplication.run(SichuationApplication.class, args);
 	}
