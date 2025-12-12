@@ -1,0 +1,203 @@
+[33mcommit 7034b4c0e1e9d1948455c8bda27f4cc993ba7bd8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mgemini[m[33m, [m[1;31morigin/gemini[m[33m)[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 12 14:39:08 2025 +0900
+
+    gemini api 연동. 결과값 시흥에 맞춰 주소값 처리
+
+[33mcommit 53743f363988ab8961c695f2172ecc679011ff98[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 12 14:35:05 2025 +0900
+
+    gemini api 연동. 결과값 시흥에 맞춰 주소값 처리
+
+[33mcommit 84cfd3633a007b21d6c5d82ccd8c0eac0eb299fc[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 12 14:33:37 2025 +0900
+
+    gemini api 연동. 결과값 시흥에 맞춰 주소값 처리
+
+[33mcommit 86db5d012c65fcc699c7284bf1ada9e80aa75236[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: HyeonSu <ih9158228@gmail.com>
+Date:   Fri Dec 5 16:03:55 2025 +0900
+
+    구조 세팅
+
+[33mcommit 63dccdb3230515df5c49c569f733bfcc2c96b169[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:32:59 2025 +0900
+
+    reset_all
+
+[33mcommit 8ed303dca248fadf1f1938d2a8f1762ab8368a78[m
+Author: yoonmi <dbsal0327@gmail.com>
+Date:   Fri Dec 5 15:31:21 2025 +0900
+
+    test
+
+[33mcommit be251822443ad47e9aaec08d8c8bf20cf0ebd9fb[m
+Merge: e15d24b a254cea
+Author: yoonmi <dbsal0327@gmail.com>
+Date:   Fri Dec 5 15:30:37 2025 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       sichuation/src/main/java/com/web/sichuation/SichuationApplication.java
+
+[33mcommit a254cea235735c3baeaf65b170af006f53bc1253[m
+Merge: 7a8a0e3 210da31
+Author: qkrgk <qkrgkals0930@gmail.com>
+Date:   Fri Dec 5 15:28:56 2025 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       sichuation/src/main/java/com/web/sichuation/SichuationApplication.java
+
+[33mcommit 7a8a0e3780cbd0048466061b8e8b3a3dea5b5dba[m
+Author: qkrgk <qkrgkals0930@gmail.com>
+Date:   Fri Dec 5 15:28:22 2025 +0900
+
+    1
+
+[33mcommit e15d24b277c032f21ad625b6cc59730e195275b5[m
+Merge: 2700262 210da31
+Author: yoonmi <dbsal0327@gmail.com>
+Date:   Fri Dec 5 15:27:57 2025 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       sichuation/src/main/java/com/web/sichuation/SichuationApplication.java
+
+[33mcommit 2700262a1e47f2c6e1f1e22302a4a5a36d8587e5[m
+Merge: ea61f29 283fccc
+Author: yoonmi <dbsal0327@gmail.com>
+Date:   Fri Dec 5 15:27:14 2025 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       sichuation/src/main/java/com/web/sichuation/SichuationApplication.java
+
+[33mcommit 210da319749b904327196c4c1bd66c15f8bac721[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:26:55 2025 +0900
+
+    test_commit
+
+[33mcommit 5f0879340eaa9c1506e3468d41aab5d1ae440586[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:26:47 2025 +0900
+
+    test_commit
+
+[33mcommit 657d05d6ad5a709f74510e342bfba70e825ba4f4[m
+Merge: 4fd2ab4 283fccc
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:26:15 2025 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       sichuation/src/main/java/com/web/sichuation/SichuationApplication.java
+
+[33mcommit ea61f298364285cde59efd5b964cdce2f1bebe82[m
+Author: yoonmi <dbsal0327@gmail.com>
+Date:   Fri Dec 5 15:26:06 2025 +0900
+
+    yoon
+
+[33mcommit 4fd2ab46dae65b5edc94338f686ee828b7fc1824[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:25:36 2025 +0900
+
+    test_commit
+
+[33mcommit 283fccc773ba2aa510e47a52902b39226cb22f82[m
+Merge: 34d6a01 215376e
+Author: ParkRaechan <0CatThatCat0@gmail.com>
+Date:   Fri Dec 5 15:24:52 2025 +0900
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       sichuation/src/main/java/com/web/sichuation/SichuationApplication.java
+
+[33mcommit 215376eb29e9bdb66547d46637d47ba562eaae04[m
+Author: qkrgk <qkrgkals0930@gmail.com>
+Date:   Fri Dec 5 15:23:09 2025 +0900
+
+    hi
+
+[33mcommit 01ba00d8f2991b16f841e9d103f308bd4b7cc37d[m
+Author: qkrgk <qkrgkals0930@gmail.com>
+Date:   Fri Dec 5 15:22:23 2025 +0900
+
+    hi
+
+[33mcommit 34d6a015f962f05a74fba61c80977e805df04040[m
+Author: ParkRaechan <0CatThatCat0@gmail.com>
+Date:   Fri Dec 5 15:22:22 2025 +0900
+
+    test
+
+[33mcommit 6a209269464c9796ebcc7cce3c78a20fc48cbd3b[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:18:13 2025 +0900
+
+    test_int
+
+[33mcommit 21b9ce443f40bbdb07fc30f329ab7b683d06f73c[m
+Author: TMILY9526 <dnwn199@naver.com>
+Date:   Fri Dec 5 15:11:03 2025 +0900
+
+    test
+
+[33mcommit 39b915287b442acfddddd826a9ba0837b9a9658b[m
+Author: HyeonSu <ih9158228@gmail.com>
+Date:   Fri Dec 5 15:02:21 2025 +0900
+
+    초기세팅2
+
+[33mcommit 580713767ea9896084c08909348042feaa891715[m
+Author: HyeonSuuuuu <ih9158228@gmail.com>
+Date:   Fri Dec 5 14:59:57 2025 +0900
+
+    초기세팅
+
+[33mcommit 65f0c3488a0f784e2680f7ea1180973cbde539ad[m
+Author: HyeonSuuuuu <ih9158228@gmail.com>
+Date:   Fri Sep 19 15:34:19 2025 +0900
+
+    Docs: ReadMe 학번 추가
+
+[33mcommit 52f987d939a8c19214391a7f4836aa1a81bbf4bf[m
+Author: HyeonSuuuuu <ih9158228@gmail.com>
+Date:   Fri Sep 19 15:28:07 2025 +0900
+
+    Docs: 깃 사용법, 컨벤션 추가
+
+[33mcommit e3bc38c1d98e2b4c05d2422da56f80978c0a90d3[m
+Author: HyeonSu <ih9158228@gmail.com>
+Date:   Fri Sep 19 15:19:34 2025 +0900
+
+    Docs: 9/19 캡스톤디자인 신청서
+
+[33mcommit ca941e62c9308e9f5fe626a6ff9f3ec941b2c606[m
+Author: HyeonSuuuuu <ih9158228@gmail.com>
+Date:   Fri Sep 19 15:17:42 2025 +0900
+
+    Docs: 참여학생 추가
+
+[33mcommit 8efc2da2fbcc97c3e18ff76ed40a632c8678355c[m
+Author: HyeonSuuuuu <ih9158228@gmail.com>
+Date:   Fri Sep 19 15:16:21 2025 +0900
+
+    Docs: 참여학생 추가
+
+[33mcommit 85fcf66c894c5f97fcd432376f3859dbb5593df7[m
+Author: HyeonSuuuuu <ih9158228@gmail.com>
+Date:   Fri Sep 19 15:10:17 2025 +0900
+
+    Initial commit
