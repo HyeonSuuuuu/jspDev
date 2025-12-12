@@ -1,66 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript"
-            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=">
-    </script>
     <meta charset="utf-8">
     <title>간단 카카오맵</title>
-    <style>
-        /* 지도를 담을 컨테이너의 크기는 필수입니다. */
-        #map {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ccc;
-        }
-    </style>
 </head>
 <body>
 
-<div id="map"></div>
-
+<div id="map" style="width:500px;height:400px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey="></script>
 <script>
-    // 2. 지도 표시 설정
-    var mapContainer = document.getElementById('map'); // 지도를 담을 영역의 DOM 레퍼런스
-    var mapOption = {
-        // 지도의 중심 좌표 (예: 서울 시청)
-        center: new kakao.maps.LatLng(37.566826, 126.9786567),
-        level: 3 // 지도의 확대 레벨
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
     };
 
-    // 3. 지도를 생성합니다.
-    var map = new kakao.maps.Map(mapContainer, mapOption);
-
-    // 4. 지도에 마커를 표시합니다.
-
-    // 마커가 표시될 위치 (지도 중심과 동일)
-    var markerPosition  = new kakao.maps.LatLng(37.566826, 126.9786567);
-
-    // 마커를 생성합니다.
-    var marker = new kakao.maps.Marker({
-        position: markerPosition
-    });
-
-    // 마커를 지도에 표시합니다.
-    marker.setMap(map);
-
-    // 5. 마커에 인포윈도우(정보창)를 추가합니다.
-
-    // 인포윈도우에 표시할 내용
-    var iwContent = '<div style="padding:5px;">카카오맵 테스트입니다!</div>',
-        iwRemoveable = true; // 닫기 버튼을 표시할지 여부
-
-    // 인포윈도우를 생성합니다.
-    var infowindow = new kakao.maps.InfoWindow({
-        content : iwContent,
-        removable : iwRemoveable
-    });
-
-    // 마커 위에 인포윈도우를 표시합니다.
-    kakao.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
-    });
-
+    var map = new kakao.maps.Map(container, options);
 </script>
 </body>
 </html>
