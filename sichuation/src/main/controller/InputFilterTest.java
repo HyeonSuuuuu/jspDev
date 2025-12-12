@@ -7,11 +7,7 @@ public class InputFilterTest {
     public static void main(String[] args) {
 
         String[] tests = {
-                "그냥 혹시 강남에서 뭐 추천해줘",
-                "솔직히 씨발 홍대에 뭐있을까 알려줘",
-                "그 제주도에서 약간 카페 추천해주세요",
-                "광안리에서 좀 맛집 추천해줄래",
-                "음 어 근데 부산 좀 알려줘"
+                "그 있잖아 나는 오늘 정왕에서 점심 먹을려고 하는데 약간 한식 먹고 싶은데 밥집 추천 해주라"
         };
 
         for (String t : tests) {
