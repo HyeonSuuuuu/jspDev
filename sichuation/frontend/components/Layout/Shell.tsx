@@ -4,6 +4,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { HeaderLogo } from '../Header/HeaderLogo';
 import { InfoFooter } from '../Footer/InfoFooter';
 import { ChatbotSidebar } from '../Chat/ChatbotSidebar';
+import { PlaceList } from '../List/PlaceList';
 
 export function Shell({ children }: { children: React.ReactNode }) {
     const [opened, { toggle }] = useDisclosure();
@@ -12,6 +13,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         <AppShell
             header={{ height: 60 }}
             navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
+            aside={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
             footer={{ height: 60 }}
             padding="md"
         >
@@ -23,8 +25,12 @@ export function Shell({ children }: { children: React.ReactNode }) {
             </AppShell.Header>
 
             <AppShell.Navbar p="md">
-                <ChatbotSidebar />
+                <PlaceList />
             </AppShell.Navbar>
+
+            <AppShell.Aside p="md">
+                <ChatbotSidebar />
+            </AppShell.Aside>
 
             <AppShell.Main>
                 {children}
