@@ -12,6 +12,7 @@
     "@mantine/core": "^8.3.10",
     "@mantine/dates": "^8.3.10",
     "@mantine/hooks": "^8.3.10",
+    "@tabler/icons-react": "^3.35.0",
     "dayjs": "^1.11.19",
     "next": "16.0.10",
     "postcss": "^8.5.6",
