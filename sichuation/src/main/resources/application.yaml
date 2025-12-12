@@ -1,3 +1,14 @@
 spring:
   application:
     name: sichuation
+  ai:
+    google:
+      genai:
+        api-key: key
+        chat:
+          options:
+            model: gemini-2.5-flash
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
