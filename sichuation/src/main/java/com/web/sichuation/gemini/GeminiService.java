@@ -26,6 +26,18 @@ public class GeminiService {
 
     private static final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
+    private static final String PROMPT_TEMPLATE = "너는 시흥시 기반 유능한 여행 가이드야. 사용자의 요청에 맞는 장소를 3~5곳 추천해줘.\n\n" +
+            "사용자 요청: \"%s\"\n\n" +
+            "반드시 아래와 같은 JSON 형식으로만 답변해. 다른 말은 덧붙이지 마.\n" +
+            "[\n" +
+            "{\n" +
+            "\"name\": \"장소명\",\n" +
+            "\"address\": \"정확한 도로명 주소 (~근방, ~일대 X) (한국어)\",\n" +
+            "\"description\": \"추천 이유 한 줄 요약\"\n" +
+            "},\n" +
+            "...\n" +
+            "]";
+
     /**
      * Gemini API에 메시지를 전송하고 응답을 받음
      */
@@ -33,10 +45,15 @@ public class GeminiService {
         try {
             String url = GEMINI_API_URL + "?key=" + apiKey;
 
-            // 요청 본문 생성
+            // 프롬프트 적용
+            // String.format 사용 시 % 문자가 있으면 에러가 발생하므로 이스케이프 처리
+            String safeUserMessage = userMessage.replace("%", "%%");
+            String finalPrompt = String.format(PROMPT_TEMPLATE, safeUserMessage);
+
+            // 요청 본문 생성 (JSON 이스케이프 처리)
             String requestBody = String.format(
                     "{\"contents\":[{\"parts\":[{\"text\":\"%s\"}]}]}",
-                    userMessage.replace("\"", "\\\"").replace("\n", "\\n"));
+                    finalPrompt.replace("\"", "\\\"").replace("\n", "\\n"));
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);

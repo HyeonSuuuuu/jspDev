@@ -1,21 +1,16 @@
 import { Title, Group } from '@mantine/core';
+import Image from 'next/image';
 
 export function HeaderLogo() {
     return (
         <Group>
-            <div style={{
-                width: 32,
-                height: 32,
-                background: 'var(--mantine-color-blue-filled)',
-                borderRadius: '8px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'white',
-                fontWeight: 'bold'
-            }}>
-                S
-            </div>
+            <Image
+                src="/team_logo.png"
+                alt="SichuAtion Logo"
+                width={40}
+                height={40}
+                style={{ objectFit: 'contain' }}
+            />
             <Title order={3}>Sichuation</Title>
         </Group>
     );

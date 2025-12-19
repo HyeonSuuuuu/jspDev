@@ -13,12 +13,13 @@ interface Message {
 
 export function ChatbotSidebar() {
     const [messages, setMessages] = useState<Message[]>([
-        { id: 1, text: '안녕하세요! 시흥시/안양시 맛집, 카페 등을 추천해 드립니다.', isUser: false }
+        { id: 1, text: '안녕하세요! 시흥시 맛집, 카페 등을 추천해 드립니다.', isUser: false }
     ]);
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
     const scrollViewport = useRef<HTMLDivElement>(null);
     const setSearchAddress = useMapStore((state) => state.setSearchAddress);
+    const setPlaces = useMapStore((state) => state.setPlaces);
 
     const scrollToBottom = () => {
         setTimeout(() => {
@@ -49,11 +50,37 @@ export function ChatbotSidebar() {
             const data = await response.json();
 
             // data format matches GeminiResponse(String message, List<String> addresses)
+            let botText = data.message;
+            let addresses = data.addresses || [];
+
+            // Try to parse JSON from the response
+            try {
+                const cleanJson = data.message.replace(/```json/gi, '').replace(/```/g, '').trim();
+                const places = JSON.parse(cleanJson);
+
+                if (Array.isArray(places)) {
+                    setPlaces(places);
+
+                    // Extract addresses from the parsed places
+                    const newAddresses = places.map((p: any) => p.address).filter((addr: string) => addr);
+                    if (newAddresses.length > 0) {
+                        addresses = newAddresses;
+                    }
+
+                    // Format the chat message to be more readable
+                    botText = "추천 장소를 좌측 목록에 업데이트했습니다.\n\n" +
+                        places.map((p: any) => `📍 ${p.name}\n${p.description}`).join('\n\n');
+                }
+            } catch (e) {
+                console.warn("Failed to parse JSON from LLM response:", e);
+                // If parsing fails, fall back to showing the original message
+            }
+
             const botMessage = {
                 id: Date.now() + 1,
-                text: data.message, // Field name from Java record
+                text: botText,
                 isUser: false,
-                addresses: data.addresses
+                addresses: addresses
             };
 
             setMessages(prev => [...prev, botMessage]);
