@@ -38,8 +38,9 @@ export function ChatbotSidebar() {
 
         try {
             // Call Spring Boot Backend
-            // Assuming backend is running on port 8080. If configured via proxy, use '/api/gemini/chat'
-            const response = await fetch('http://localhost:8080/api/gemini/chat', {
+            // Use environment variable or default to localhost
+            const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+            const response = await fetch(`${baseUrl}/api/gemini/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: userMessage.text })
@@ -62,7 +63,12 @@ export function ChatbotSidebar() {
                     setPlaces(places);
 
                     // Extract addresses from the parsed places
-                    const newAddresses = places.map((p: any) => p.address).filter((addr: string) => addr);
+                    const newAddresses = places.map((p: any) => {
+                        // Frontend preprocessing: remove text in parentheses and special chars
+                        const rawAddr = p.address || '';
+                        return rawAddr.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').replace(/[*#\-•·]/g, '').trim();
+                    }).filter((addr: string) => addr && addr.length > 0);
+
                     if (newAddresses.length > 0) {
                         addresses = newAddresses;
                     }
