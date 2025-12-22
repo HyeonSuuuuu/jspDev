@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.web.sichuation.controller.InputFilter;
-import com.web.sichuation.controller.PromptBuilder;
+import com.web.sichuation.utils.InputFilter;
+import com.web.sichuation.utils.PromptBuilder;
 
 /**
  * Gemini API 연동 서비스 (직접 HTTP 호출 방식)

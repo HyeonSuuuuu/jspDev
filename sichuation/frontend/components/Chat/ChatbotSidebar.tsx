@@ -38,8 +38,8 @@ export function ChatbotSidebar() {
 
         try {
             // Call Spring Boot Backend
-            // Use environment variable or default to localhost
-            const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+            // Use environment variable or default to relative path (for production Nginx)
+            const baseUrl = process.env.NEXT_PUBLIC_API_URL || '';
             const response = await fetch(`${baseUrl}/api/gemini/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
