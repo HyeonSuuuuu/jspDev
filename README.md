@@ -41,6 +41,7 @@
 ---
 ## 소개 및 설명   
 <img width="1263" height="707" alt="image" src="https://github.com/user-attachments/assets/f8d90e88-8662-450f-ad12-c38e828af0c0" />
+<img width="1265" height="703" alt="image" src="https://github.com/user-attachments/assets/653d4236-18ec-4bd1-935b-90a3485059e4" />
 <img width="1257" height="708" alt="image" src="https://github.com/user-attachments/assets/109cdba8-81b9-427d-be0b-3dbd1c796b72" />
 <img width="1264" height="709" alt="image" src="https://github.com/user-attachments/assets/d5e6d18d-9150-4c76-944d-c527b70b526d" />
 <img width="1264" height="710" alt="image" src="https://github.com/user-attachments/assets/f3896063-cbf9-467d-862e-be075441aedf" />
