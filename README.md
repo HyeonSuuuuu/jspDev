@@ -34,6 +34,7 @@
 </table>
 
 ---
+# 주제 - 챗봇 기반 장소 추천 시스템
    
 ## 시연영상 - 사진을 클릭해주세요  
 [<img width="1918" height="1078" alt="썸네일" src="https://github.com/user-attachments/assets/4602f773-3b60-45d4-9fc0-16fdeaa97615" />](https://youtu.be/7LAS7bhArjA?si=yDa1H-SimYBLWgNn)  
